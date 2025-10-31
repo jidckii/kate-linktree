@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <meta property="og:title" content="{{ config.meta.title }}">
     <meta property="og:site_name" content="{{ config.meta.title }}">
@@ -29,7 +30,22 @@
         <section class="links">
             {% for link in config.links %}
             <a class="link-item" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                <p>{{ link.name }}</p>
+                {% if 'pinterest' in link.name.lower() %}
+                <i class="fab fa-pinterest"></i>
+                {% elif 'telegram' in link.name.lower() %}
+                <i class="fab fa-telegram"></i>
+                {% elif 'instagram' in link.name.lower() %}
+                <i class="fab fa-instagram"></i>
+                {% elif 'youtube' in link.name.lower() %}
+                <i class="fab fa-youtube"></i>
+                {% elif 'vk' in link.name.lower() or 'вконтакте' in link.name.lower() %}
+                <i class="fab fa-vk"></i>
+                {% elif 'behance' in link.name.lower() %}
+                <i class="fab fa-behance"></i>
+                {% else %}
+                <i class="fas fa-link"></i>
+                {% endif %}
+                <span>{{ link.name }}</span>
             </a>
             {% endfor %}
         </section>
