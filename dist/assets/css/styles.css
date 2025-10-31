@@ -16,9 +16,9 @@
 
   --primary-color-light: #ffffff;
   --background-color-light: #f0f0f0;
-  --text-color-light: #333;
+  --text-color-light: #ffffff;
   --link-color-light: #1a73e8;
-  --bio-color-light: #666;
+  --bio-color-light: #ffffff;
 
   --primary-color-dark: #1e1e1e;
   --background-color-dark: #121212;
@@ -64,6 +64,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color);
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-color);
   padding: var(--padding);
 }
