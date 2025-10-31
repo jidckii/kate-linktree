@@ -8,7 +8,7 @@
 /* Variables */
 :root {
   --max-width: 600px;
-  --font-family: 'Inter', sans-serif;
+  --font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
   --padding: 1rem;
   --header-margin-bottom: 0rem;
   --line-height: 2;
@@ -96,12 +96,24 @@ header {
 h1 {
   font-size: 32px;
   margin-bottom: 0.5rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 .bio {
   font-size: 24px;
   color: var(--bio-color);
   margin-bottom: 0.1rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 /* Main Content Styles */
