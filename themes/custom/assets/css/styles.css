@@ -1,3 +1,11 @@
+/* Custom Fonts */
+@font-face {
+  font-family: 'Borsok';
+  src: url('../fonts/boorsok.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -8,7 +16,7 @@
 /* Variables */
 :root {
   --max-width: 600px;
-  --font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+  --font-family: 'Nunito', sans-serif;
   --padding: 1rem;
   --header-margin-bottom: 0rem;
   --line-height: 2;
@@ -94,14 +102,15 @@ header {
 }
 
 h1 {
-  font-size: 32px;
+  /* font-family: 'Borsok', var(--font-family); */
+  font-size: 28px;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(235,233,229, 0.1);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 5px; */
 }
 
 .bio {
@@ -109,7 +118,7 @@ h1 {
   color: var(--bio-color);
   margin-bottom: 0.1rem;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(235,233,229, 0.1);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   padding: 0.5rem 1rem;
