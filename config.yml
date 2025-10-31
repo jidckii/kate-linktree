@@ -1,11 +1,11 @@
-name: "Катя рисует 🖌️"
+name: "Катя рисует"
 picture: "assets/img/picture.jpg"
-bio: "Рисую и придумываю для детей 🐞 🧚🏻‍♀️ 🐛 🧸"
+bio: "рисую и придумываю для детей 🐞 🧚🏻‍♀️ 🐛 🧸"
 meta:
   lang: "ru"
-  description: "Рисую и придумываю для детей 🐞 🧚🏻‍♀️ 🐛 🧸"
-  title: "Катя рисует 🖌️"
-  author: "Катя"
+  description: "рисую и придумываю для детей 🐞 🧚🏻‍♀️ 🐛 🧸"
+  title: "Катя рисует"
+  author: "катя"
   siteUrl: ""
 links:
   - name: "Pinterest"

@@ -10,20 +10,20 @@
   --max-width: 600px;
   --font-family: 'Inter', sans-serif;
   --padding: 1rem;
-  --header-margin-bottom: 1rem;
+  --header-margin-bottom: 0rem;
   --line-height: 2;
   --font-size: 16px;
 
-  --primary-color-light: #ffffff;
+  --primary-color-light: #DACDC0;
   --background-color-light: #f0f0f0;
   --text-color-light: #ffffff;
-  --link-color-light: #1a73e8;
+  --link-color-light: #593425;
   --bio-color-light: #ffffff;
 
-  --primary-color-dark: #1e1e1e;
+  --primary-color-dark: #DACDC0;
   --background-color-dark: #121212;
   --text-color-dark: #e0e0e0;
-  --link-color-dark: #8ab4f8;
+  --link-color-dark: #593425;
   --bio-color-dark: #aaa;
 }
 
@@ -95,14 +95,14 @@ header {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 0.5rem;
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 24px;
   color: var(--bio-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 
 /* Main Content Styles */
