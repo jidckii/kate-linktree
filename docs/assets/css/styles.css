@@ -15,39 +15,11 @@
   --line-height: 2;
   --font-size: 16px;
 
-  --primary-color-light: #DACDC0;
-  --background-color-light: #f0f0f0;
-  --text-color-light: #ffffff;
-  --link-color-light: #593425;
-  --bio-color-light: #ffffff;
-
-  --primary-color-dark: #DACDC0;
-  --background-color-dark: #121212;
-  --text-color-dark: #e0e0e0;
-  --link-color-dark: #593425;
-  --bio-color-dark: #aaa;
-}
-
-/* Light Theme */
-@media (prefers-color-scheme: light) {
-  :root {
-    --primary-color: var(--primary-color-light);
-    --background-color: var(--background-color-light);
-    --text-color: var(--text-color-light);
-    --link-color: var(--link-color-light);
-    --bio-color: var(--bio-color-light);
-  }
-}
-
-/* Dark Theme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: var(--primary-color-dark);
-    --background-color: var(--background-color-dark);
-    --text-color: var(--text-color-dark);
-    --link-color: var(--link-color-dark);
-    --bio-color: var(--bio-color-dark);
-  }
+  --primary-color: #DACDC0;
+  --background-color: #f0f0f0;
+  --text-color: #ffffff;
+  --link-color: #593425;
+  --bio-color: #ffffff;
 }
 
 /* Global Styles */
