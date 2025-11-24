@@ -40,7 +40,7 @@ if (copyLink) {
 function showCopyFeedback(element) {
     const originalText = element.querySelector('span').textContent;
     element.querySelector('span').textContent = 'Скопировано в буфер обмена!';
-    element.style.backgroundColor = '#593425';
+    element.style.backgroundColor = '#515464';
     
     setTimeout(() => {
         element.querySelector('span').textContent = originalText;
