@@ -1,4 +1,13 @@
-console.log("scripts loaded");
+// Проверка поддержки WebP
+(function() {
+    var webP = new Image();
+    webP.onload = webP.onerror = function() {
+        if (webP.height !== 2) {
+            document.documentElement.classList.add('no-webp');
+        }
+    };
+    webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();
 
 const yearDate = new Date().getFullYear().toString();
 document.querySelector(".year").innerText = yearDate;

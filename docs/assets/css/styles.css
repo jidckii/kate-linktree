@@ -37,12 +37,17 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color);
-  background-image: url('../img/background.png');
+  background-image: url('../img/background.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: var(--text-color);
   padding: var(--padding);
+}
+
+/* Fallback для браузеров без поддержки WebP */
+.no-webp body {
+  background-image: url('../img/background.png');
 }
 
 /* Header Styles */
@@ -105,6 +110,10 @@ main {
   border: 1px solid var(--link-color);
   transition: background-color 0.25s, color 0.25s;
   font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  width: 100%;
 }
 
 .link-item i {
@@ -119,6 +128,11 @@ main {
 .link-item:focus {
   background-color: var(--link-color);
   color: var(--primary-color);
+}
+
+.link-item:focus-visible {
+  outline: 3px solid var(--link-color);
+  outline-offset: 2px;
 }
 
 .link-item p {
