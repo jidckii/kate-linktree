@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; connect-src 'self'; frame-src https://pay.cloudtips.ru;">
     <meta name="description" content="Рисую и придумываю для детей">
     <title>Катя рисует</title>
     <link rel="canonical" href="/">
@@ -62,6 +62,21 @@
     <footer>
         <small>&copy; <span class="year"></span> Катя</small>
     </footer>
+
+    <!-- Всплывашка донатов -->
+    <div class="donate-toast" id="donate-toast" hidden>
+        <div class="donate-toast-content">
+            <span class="donate-toast-text">Нравится то, что я делаю?</span>
+            <a href="https://pay.cloudtips.ru/p/bc7a27b7" target="_blank" rel="noopener noreferrer" class="donate-btn">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                Поддержать
+            </a>
+        </div>
+        <button class="donate-toast-close" id="donate-close" aria-label="Закрыть">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+
     <script src="assets/js/script.min.js"></script>
 </body>
 </html>
