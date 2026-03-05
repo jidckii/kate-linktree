@@ -111,7 +111,7 @@ main {
 
 .library-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   margin-top: 1rem;
 }
@@ -147,6 +147,33 @@ main {
 
 .library-card:hover img {
   transform: scale(1.05);
+}
+
+.library-card.library-card--hidden {
+  display: none;
+}
+
+.library-more {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background: var(--primary-color);
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.library-more:hover {
+  background-color: var(--link-color);
+  color: var(--primary-color);
+}
+
+.library-more.hidden {
+  display: none;
 }
 
 .library-card-soon {

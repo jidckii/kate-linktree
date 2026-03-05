@@ -73,7 +73,15 @@
         </section>
         <section class="library" aria-label="Библиотека">
             <h2 class="section-title">Библиотека</h2>
-            <div class="library-grid">
+            <div class="library-grid" id="library-grid">
+                <div class="library-card library-card--soon">
+                    <img src="assets/img/library/rabbit.jpg" alt="Кролик" loading="lazy">
+                    <span class="library-card-title">Кролик</span>
+                    <div class="library-card-soon">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                        <span>Ещё рисую...</span>
+                    </div>
+                </div>
                 <div class="library-card library-card--soon">
                     <img src="assets/img/library/castle.jpg" alt="Замок" loading="lazy">
                     <span class="library-card-title">Замок</span>
@@ -98,19 +106,20 @@
                     <img src="assets/img/library/nutcracker.jpg" alt="Щелкунчик" loading="lazy">
                     <span class="library-card-title">Бумажный театр «Щелкунчик»</span>
                 </a>
-                <a class="library-card" href="https://t.me/katya_risyet/74" target="_blank" rel="noopener noreferrer">
+                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/74" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/advent.jpg" alt="Адвент" loading="lazy">
                     <span class="library-card-title">Адвент</span>
                 </a>
-                <a class="library-card" href="https://t.me/katya_risyet/12" target="_blank" rel="noopener noreferrer">
+                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/12" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/halloween.jpg" alt="Хэллоуин" loading="lazy">
                     <span class="library-card-title">Хэллоуин</span>
                 </a>
-                <a class="library-card" href="https://t.me/katya_risyet/7" target="_blank" rel="noopener noreferrer">
+                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/7" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/autun.jpg" alt="Осень" loading="lazy">
                     <span class="library-card-title">Осень</span>
                 </a>
             </div>
+            <button class="library-more" id="library-more" type="button">Загрузить ещё</button>
         </section>
     </main>
     <footer>
