@@ -223,7 +223,8 @@ main {
   transition: opacity 0.25s;
 }
 
-.library-card--soon:hover .library-card-soon {
+.library-card--soon:hover .library-card-soon,
+.library-card--soon.library-card--active .library-card-soon {
   opacity: 1;
 }
 

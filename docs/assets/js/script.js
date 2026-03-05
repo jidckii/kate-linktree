@@ -12,6 +12,29 @@
 const yearDate = new Date().getFullYear().toString();
 document.querySelector(".year").innerText = yearDate;
 
+// Карточки «Ещё рисую» — toggle по тапу на тач-устройствах
+(function() {
+    var cards = document.querySelectorAll('.library-card--soon');
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('click', function(e) {
+            e.stopPropagation();
+            var wasActive = this.classList.contains('library-card--active');
+            // Закрыть все открытые
+            var active = document.querySelectorAll('.library-card--active');
+            for (var j = 0; j < active.length; j++) {
+                active[j].classList.remove('library-card--active');
+            }
+            if (!wasActive) this.classList.add('library-card--active');
+        });
+    }
+    document.addEventListener('click', function() {
+        var active = document.querySelectorAll('.library-card--active');
+        for (var j = 0; j < active.length; j++) {
+            active[j].classList.remove('library-card--active');
+        }
+    });
+})();
+
 // Библиотека — загрузить ещё
 (function() {
     var btn = document.getElementById('library-more');
