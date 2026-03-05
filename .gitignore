@@ -1,0 +1,13 @@
+# IDE
+/.idea
+/.vscode
+/.env
+/.vagrant/
+/.tool-versions
+/.playwright-mcp
+.DS_Store
+
+# Claude
+/.claude/settings.local.json
+/.claude/agent-memory/
+/.claude/plans/
