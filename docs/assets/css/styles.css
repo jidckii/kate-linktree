@@ -97,8 +97,39 @@ main {
 }
 
 .links + .links,
-.links + .library {
+.links + .library,
+.library + .license {
   margin-top: 1.5rem;
+}
+
+/* License */
+.license {
+  text-align: center;
+}
+
+.license-text {
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.license-text p {
+  margin-bottom: 0.75rem;
+}
+
+.license-text ul {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.license-text li {
+  margin-bottom: 0.25rem;
+}
+
+.license-text a {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 /* Library Grid */
