@@ -140,13 +140,37 @@ main {
   padding: 8px;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
 }
 
-a.library-card:hover img {
+.library-card:hover img {
   transform: scale(1.05);
+}
+
+.library-card-soon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.library-card--soon:hover .library-card-soon {
+  opacity: 1;
+}
+
+.library-card-soon i {
+  font-size: 1.5rem;
 }
 
 .link-item {
