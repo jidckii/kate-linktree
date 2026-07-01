@@ -1,88 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; connect-src 'self'; frame-src https://pay.cloudtips.ru;">
-    <meta name="description" content="Рисую и придумываю для детей">
-    <title>Катя рисует</title>
-    <link rel="canonical" href="/">
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kate.am">
-    <meta property="og:title" content="Катя рисует">
-    <meta property="og:site_name" content="Катя рисует">
-    <meta property="og:description" content="Рисую и придумываю для детей">
-    <meta property="og:image" content="https://kate.am/assets/img/poster.png">
-    <meta property="og:image:width" content="1080">
-    <meta property="og:image:height" content="566">
-    <meta property="og:locale" content="ru_RU">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://kate.am">
-    <meta name="twitter:title" content="Катя рисует">
-    <meta name="twitter:description" content="Рисую и придумываю для детей">
-    <meta name="twitter:image" content="https://kate.am/assets/img/poster.png">
-</head>
-<body>
-    <header>
-        <picture>
-            <source srcset="assets/img/picture.webp" type="image/webp">
-            <img src="assets/img/picture.jpg" alt="Аватар Кати — автор детских иллюстраций" class="avatar" loading="lazy">
-        </picture>
-        <h1>Катя рисует</h1>
-        <small class="bio">рисую и придумываю для детей</small>
-    </header>
-    <main>
-        <section class="links" aria-label="Социальные сети">
-            <h2 class="section-title">Соцсети</h2>
-            <a class="link-item" href="https://t.me/katya_risyet" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram канал Кати">
-                <i class="fab fa-telegram" aria-hidden="true"></i>
-                <span>Telegram</span>
-            </a>
-            <a class="link-item" href="https://pin.it/2odb0mdwU" target="_blank" rel="noopener noreferrer" aria-label="Открыть Pinterest галерею Кати">
-                <i class="fab fa-pinterest" aria-hidden="true"></i>
-                <span>Pinterest</span>
-            </a>
-            <a class="link-item" href="https://www.instagram.com/katya_risyet" target="_blank" rel="noopener noreferrer" aria-label="Открыть Instagram профиль Кати">
-                <!-- <i class="fab fa-instagram" aria-hidden="true"></i> -->
-                <span>Instagram</span>
-            </a>
-            <a class="link-item" href="https://www.threads.com/@katya_risyet" target="_blank" rel="noopener noreferrer" aria-label="Открыть Threads профиль Кати">
-                <!-- <i class="fab fa-threads" aria-hidden="true"></i> -->
-                <span>Threads</span>
-            </a>
-        </section>
-        <section class="links" aria-label="Сотрудничество">
-            <h2 class="section-title">Сотрудничество</h2>
-            <a class="link-item" href="https://boosty.to/katya_risyet/donate" target="_blank" rel="noopener noreferrer" aria-label="Поддержать Катю на boosty">
-                <i class="fas fa-coins" aria-hidden="true"></i>
-                <span>Поддержать на boosty ₽ / $ </span>
-            </a>
-            <a class="link-item" href="https://pay.cloudtips.ru/p/bc7a27b7" target="_blank" rel="noopener noreferrer" aria-label="Поддержать Катю">
-                <i class="fas fa-mug-hot" aria-hidden="true"></i>
-                <span>Поддержать ₽</span>
-            </a>
-            <a class="link-item" href="https://t.me/medvedeva_ekaterina" target="_blank" rel="noopener noreferrer" aria-label="Написать Кате в Телеграм">
-                <i class="fab fa-telegram" aria-hidden="true"></i>
-                <span>Написать в Телеграм</span>
-            </a>
-        </section>
-        <section class="library" aria-label="Библиотека">
-            <h2 class="section-title">Библиотека</h2>
-            <div class="library-grid" id="library-grid">
-                <!-- <div class="library-card library-card--soon">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data:; connect-src 'self'; frame-src https://pay.cloudtips.ru;"
+        />
+        <meta name="description" content="Рисую и придумываю для детей" />
+        <title>Катя рисует</title>
+        <link rel="canonical" href="/" />
+        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/icons/favicon-16x16.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icons/apple-touch-icon.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/styles.min.css" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kate.am" />
+        <meta property="og:title" content="Катя рисует" />
+        <meta property="og:site_name" content="Катя рисует" />
+        <meta
+            property="og:description"
+            content="Рисую и придумываю для детей"
+        />
+        <meta
+            property="og:image"
+            content="https://kate.am/assets/img/poster.png"
+        />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="566" />
+        <meta property="og:locale" content="ru_RU" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://kate.am" />
+        <meta name="twitter:title" content="Катя рисует" />
+        <meta
+            name="twitter:description"
+            content="Рисую и придумываю для детей"
+        />
+        <meta
+            name="twitter:image"
+            content="https://kate.am/assets/img/poster.png"
+        />
+    </head>
+    <body>
+        <header>
+            <picture>
+                <source srcset="assets/img/picture.webp" type="image/webp" />
+                <img
+                    src="assets/img/picture.jpg"
+                    alt="Аватар Кати — автор детских иллюстраций"
+                    class="avatar"
+                    loading="lazy"
+                />
+            </picture>
+            <h1>Катя рисует</h1>
+            <small class="bio">рисую и придумываю для детей</small>
+        </header>
+        <main>
+            <section class="links" aria-label="Социальные сети">
+                <h2 class="section-title">Соцсети</h2>
+                <a
+                    class="link-item"
+                    href="https://t.me/katya_risyet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Открыть Telegram канал Кати"
+                >
+                    <i class="fab fa-telegram" aria-hidden="true"></i>
+                    <span>Telegram</span>
+                </a>
+                <a
+                    class="link-item"
+                    href="https://pin.it/2odb0mdwU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Открыть Pinterest галерею Кати"
+                >
+                    <i class="fab fa-pinterest" aria-hidden="true"></i>
+                    <span>Pinterest</span>
+                </a>
+                <a
+                    class="link-item"
+                    href="https://www.instagram.com/katya_risyet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Открыть Instagram профиль Кати"
+                >
+                    <!-- <i class="fab fa-instagram" aria-hidden="true"></i> -->
+                    <span>Instagram</span>
+                </a>
+                <a
+                    class="link-item"
+                    href="https://www.threads.com/@katya_risyet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Открыть Threads профиль Кати"
+                >
+                    <!-- <i class="fab fa-threads" aria-hidden="true"></i> -->
+                    <span>Threads</span>
+                </a>
+            </section>
+            <section class="links" aria-label="Сотрудничество">
+                <h2 class="section-title">Сотрудничество</h2>
+                <a
+                    class="link-item"
+                    href="https://boosty.to/katya_risyet/donate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Поддержать Катю на boosty"
+                >
+                    <i class="fas fa-coins" aria-hidden="true"></i>
+                    <span>Поддержать на boosty ₽ / $ </span>
+                </a>
+                <a
+                    class="link-item"
+                    href="https://pay.cloudtips.ru/p/bc7a27b7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Поддержать Катю"
+                >
+                    <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                    <span>Поддержать ₽</span>
+                </a>
+                <a
+                    class="link-item"
+                    href="https://t.me/medvedeva_ekaterina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Написать Кате в Телеграм"
+                >
+                    <i class="fab fa-telegram" aria-hidden="true"></i>
+                    <span>Написать в Телеграм</span>
+                </a>
+            </section>
+            <section class="library" aria-label="Библиотека">
+                <h2 class="section-title">Библиотека</h2>
+                <div class="library-grid" id="library-grid">
+                    <!-- <div class="library-card library-card--soon">
                     <img src="assets/img/library/solar_system.jpg" alt="Солнечная система" loading="lazy">
                     <span class="library-card-title">Солнечная система</span>
                     <div class="library-card-soon">
@@ -90,110 +172,271 @@
                         <span>Ещё рисую...</span>
                     </div>
                 </div> -->
-                <a class="library-card" href="https://boosty.to/katya_risyet/posts/a4a82ff8-2429-4c85-9223-a93a75809deb" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/dino.jpg" alt="Динозавры" loading="lazy">
-                    <span class="library-card-title">Динозавры</span>
-                </a>
-                <a class="library-card" href="https://boosty.to/katya_risyet/posts/1f61fb0a-a7ba-4e69-9c75-4a40333dd109" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/bee.jpg" alt="Пчёлы" loading="lazy">
-                    <span class="library-card-title">Мемори «Пчёлы»</span>
-                </a>
-                <a class="library-card" href="https://boosty.to/katya_risyet/posts/6ba97ed3-a529-40cb-917c-7b791b926dfd" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/bugs.jpeg" alt="Букашки" loading="lazy">
-                    <span class="library-card-title">Букашки</span>
-                </a>
-                <a class="library-card" href="https://boosty.to/katya_risyet/posts/ffe2e213-3829-4deb-ae5e-60cd9c44228d" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/solar_system.jpg" alt="Солнечная система" loading="lazy">
-                    <span class="library-card-title">Солнечная система</span>
-                </a>
-                <a class="library-card" href="https://boosty.to/katya_risyet/posts/11735a87-7af1-4552-aa68-3d3edbb67cfd" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/rabbit.jpg" alt="Кролики" loading="lazy">
-                    <span class="library-card-title">Бумажные куклы «Кролики»</span>
-                </a>
-                <a class="library-card" href="https://t.me/katya_risyet/219" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/spring.jpg" alt="Весна" loading="lazy">
-                    <span class="library-card-title">Весна</span>
-                </a>
-                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/179" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/forest.jpg" alt="Лес" loading="lazy">
-                    <span class="library-card-title">Лес</span>
-                </a>
-                <a class="library-card library-card--hidden" href="https://boosty.to/katya_risyet/posts/2a6a3868-11c9-4293-bef8-3e15f3b4cfd7" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/castle.jpg" alt="Замок" loading="lazy">
-                    <span class="library-card-title">Замок</span>
-                </a>
-                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/40" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/numbers_forest.jpg" alt="Постер цифры" loading="lazy">
-                    <span class="library-card-title">Постер цифры</span>
-                </a>
-                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/7" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/autun.jpg" alt="Чек-лист Осень" loading="lazy">
-                    <span class="library-card-title">Чек-лист Осень</span>
-                </a>
-                <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/5" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/autun_2.jpg" alt="Гирлянда Осень" loading="lazy">
-                    <span class="library-card-title">Гирлянда Осень</span>
-                </a>
-                <div class="library-card  library-card--hidden library-card--soon">
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/148ba214-3db2-46be-a07e-4dc7ed1e9931"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/summer_hike.jpg"
+                            alt="Динозавры"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Летний поход</span>
+                    </a>
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/a4a82ff8-2429-4c85-9223-a93a75809deb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/dino.jpg"
+                            alt="Динозавры"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Динозавры</span>
+                    </a>
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/1f61fb0a-a7ba-4e69-9c75-4a40333dd109"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/bee.jpg"
+                            alt="Пчёлы"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Мемори «Пчёлы»</span>
+                    </a>
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/6ba97ed3-a529-40cb-917c-7b791b926dfd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/bugs.jpeg"
+                            alt="Букашки"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Букашки</span>
+                    </a>
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/ffe2e213-3829-4deb-ae5e-60cd9c44228d"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/solar_system.jpg"
+                            alt="Солнечная система"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title"
+                            >Солнечная система</span
+                        >
+                    </a>
+                    <a
+                        class="library-card"
+                        href="https://boosty.to/katya_risyet/posts/11735a87-7af1-4552-aa68-3d3edbb67cfd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/rabbit.jpg"
+                            alt="Кролики"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title"
+                            >Бумажные куклы «Кролики»</span
+                        >
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://t.me/katya_risyet/219"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/spring.jpg"
+                            alt="Весна"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Весна</span>
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://t.me/katya_risyet/179"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/forest.jpg"
+                            alt="Лес"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Лес</span>
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://boosty.to/katya_risyet/posts/2a6a3868-11c9-4293-bef8-3e15f3b4cfd7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/castle.jpg"
+                            alt="Замок"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Замок</span>
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://t.me/katya_risyet/40"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/numbers_forest.jpg"
+                            alt="Постер цифры"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Постер цифры</span>
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://t.me/katya_risyet/7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/autun.jpg"
+                            alt="Чек-лист Осень"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Чек-лист Осень</span>
+                    </a>
+                    <a
+                        class="library-card library-card--hidden"
+                        href="https://t.me/katya_risyet/5"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="assets/img/library/autun_2.jpg"
+                            alt="Гирлянда Осень"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Гирлянда Осень</span>
+                    </a>
+                    <div
+                        class="library-card library-card--hidden library-card--soon"
+                    >
+                        <img
+                            src="assets/img/library/nutcracker.jpg"
+                            alt="Щелкунчик"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title"
+                            >Бумажный театр «Щелкунчик»</span
+                        >
+                        <div class="library-card-soon">
+                            <i class="fas fa-palette" aria-hidden="true"></i>
+                            <span>Вернётся в ноябре...</span>
+                        </div>
+                    </div>
+                    <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/103" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/nutcracker.jpg" alt="Щелкунчик" loading="lazy">
                     <span class="library-card-title">Бумажный театр «Щелкунчик»</span>
-                    <div class="library-card-soon">
-                        <i class="fas fa-palette" aria-hidden="true"></i>
-                        <span>Вернётся в ноябре...</span>
-                    </div>
-                </div>
-                <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/103" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/nutcracker.jpg" alt="Щелкунчик" loading="lazy">
-                    <span class="library-card-title">Бумажный театр «Щелкунчик»</span>
                 </a> -->
-                <div class="library-card  library-card--hidden library-card--soon">
+                    <div
+                        class="library-card library-card--hidden library-card--soon"
+                    >
+                        <img
+                            src="assets/img/library/advent.jpg"
+                            alt="Адвент"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Адвент</span>
+                        <div class="library-card-soon">
+                            <i class="fas fa-palette" aria-hidden="true"></i>
+                            <span>Вернётся в ноябре...</span>
+                        </div>
+                    </div>
+                    <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/74" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/advent.jpg" alt="Адвент" loading="lazy">
                     <span class="library-card-title">Адвент</span>
-                    <div class="library-card-soon">
-                        <i class="fas fa-palette" aria-hidden="true"></i>
-                        <span>Вернётся в ноябре...</span>
-                    </div>
-                </div>
-                <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/74" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/library/advent.jpg" alt="Адвент" loading="lazy">
-                    <span class="library-card-title">Адвент</span>
                 </a> -->
-                <div class="library-card  library-card--hidden library-card--soon">
-                    <img src="assets/img/library/halloween.jpg" alt="Хэллоуин" loading="lazy">
-                    <span class="library-card-title">Хэллоуин</span>
-                    <div class="library-card-soon">
-                        <i class="fas fa-palette" aria-hidden="true"></i>
-                        <span>Вернётся в октябре...</span>
+                    <div
+                        class="library-card library-card--hidden library-card--soon"
+                    >
+                        <img
+                            src="assets/img/library/halloween.jpg"
+                            alt="Хэллоуин"
+                            loading="lazy"
+                        />
+                        <span class="library-card-title">Хэллоуин</span>
+                        <div class="library-card-soon">
+                            <i class="fas fa-palette" aria-hidden="true"></i>
+                            <span>Вернётся в октябре...</span>
+                        </div>
                     </div>
-                </div>
-                <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/12" target="_blank" rel="noopener noreferrer">
+                    <!-- <a class="library-card library-card--hidden" href="https://t.me/katya_risyet/12" target="_blank" rel="noopener noreferrer">
                     <img src="assets/img/library/halloween.jpg" alt="Хэллоуин" loading="lazy">
                     <span class="library-card-title">Хэллоуин</span>
                 </a> -->
-            </div>
-            <button class="library-more" id="library-more" type="button">Загрузить ещё</button>
-        </section>
-        <section class="license" aria-label="Лицензия">
-            <h2 class="section-title">Лицензия</h2>
-            <div class="license-text">
-                <p>Все материалы являются авторской работой Екатерины Медведевой, kate.am</p>
-                <p>Материалы предназначены для личного использования и использования в образовательных учреждениях.</p>
-                <p><strong>Запрещается:</strong></p>
-                <ul>
-                    <li>копирование и распространение материалов в интернете, без указания ссылки на автора</li>
-                    <li>продажа в цифровом или печатном виде</li>
-                    <li>использование иллюстраций в коммерческих проектах, без получения лицензии</li>
-                    <li>обучение LLM (AI) и генерация изображений на базе материалов</li>
-                </ul>
-                <p>Если вы хотите использовать материалы в коммерческих целях или приобрести лицензию на использование, <a href="https://t.me/medvedeva_ekaterina" target="_blank" rel="noopener noreferrer">свяжитесь со мной</a>.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <small>&copy; <span class="year"></span> Катя</small>
-    </footer>
+                </div>
+                <button class="library-more" id="library-more" type="button">
+                    Загрузить ещё
+                </button>
+            </section>
+            <section class="license" aria-label="Лицензия">
+                <h2 class="section-title">Лицензия</h2>
+                <div class="license-text">
+                    <p>
+                        Все материалы являются авторской работой Екатерины
+                        Медведевой, kate.am
+                    </p>
+                    <p>
+                        Материалы предназначены для личного использования и
+                        использования в образовательных учреждениях.
+                    </p>
+                    <p><strong>Запрещается:</strong></p>
+                    <ul>
+                        <li>
+                            копирование и распространение материалов в
+                            интернете, без указания ссылки на автора
+                        </li>
+                        <li>продажа в цифровом или печатном виде</li>
+                        <li>
+                            использование иллюстраций в коммерческих проектах,
+                            без получения лицензии
+                        </li>
+                        <li>
+                            обучение LLM (AI) и генерация изображений на базе
+                            материалов
+                        </li>
+                    </ul>
+                    <p>
+                        Если вы хотите использовать материалы в коммерческих
+                        целях или приобрести лицензию на использование,
+                        <a
+                            href="https://t.me/medvedeva_ekaterina"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >свяжитесь со мной</a
+                        >.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <small>&copy; <span class="year"></span> Катя</small>
+        </footer>
 
-
-    <script src="assets/js/script.min.js"></script>
-</body>
+        <script src="assets/js/script.min.js"></script>
+    </body>
 </html>
